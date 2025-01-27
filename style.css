@@ -2,8 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
+body {
+    display: flex;
+}
 
 @font-face {
     font-family: norse-bold;
@@ -11,22 +15,22 @@
 }
 
 .left-side {
-    width: 45vw;
+    min-width: 40vw;
     height: 67.5vw;
     background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
 }
 
+
+
 .odin-label {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 15vw;
     height: 150px;
-    width: 45vw;
+    position: relative;
+    top: 15vw;
     background-color: rgba(0, 0, 0, 0.4);
-    text-align: center;
 }
 
 h1 {
@@ -39,4 +43,62 @@ img {
     height: 120px;
 }
 
+.text-container {
+    background-color: #fcfbfb;
+    height: 52vh;
+}
 
+.text {
+    width: 670px;
+    position: relative;
+    top: 150px;
+    left: 50px;
+}
+
+.large-text {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.form-container {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.form {
+    margin-left: 50px;
+    height: 300px;
+}
+
+.form-title {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 18px 0;
+}
+
+label {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 24px;
+    margin-right: 3.5rem;
+    padding: 0;
+}
+
+input {
+    width: 260px;
+    height: 32px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 8px;
+}
