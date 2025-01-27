@@ -101,6 +101,7 @@ input {
     border-radius: 4px;
     font-size: 16px;
     padding: 8px;
+    outline: none;
 }
 
 input[type="submit"] {
@@ -131,4 +132,18 @@ a {
 
 .submit-text {
    font-size: 18px;
+}
+
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input:valid {
+    border-color: #596D48;
+}
+
+input:focus {
+    border-color: blue;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2);
 }
